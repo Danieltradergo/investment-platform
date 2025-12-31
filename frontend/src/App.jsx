@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
+const API_BASE_URL = 'https://investment-platform-ny5x.onrender.com';
+
 function App() {
   const [portfolios, setPortfolios] = useState([
     { id: 1, name: 'My Portfolio', balance: 10000, assets: [] }
