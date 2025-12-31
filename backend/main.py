@@ -1,3 +1,4 @@
+from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -50,6 +51,7 @@ portfolios = [
     {"id": 2, "name": "Growth Portfolio", "balance": 30000, "created_at": datetime.now()}
 ]
 
+from __future__ import annotations
 assets = [
     {"id": 1, "portfolio_id": 1, "symbol": "AAPL", "quantity": 10, "purchase_price": 150, "current_price": 180},
     {"id": 2, "portfolio_id": 1, "symbol": "GOOGL", "quantity": 5, "purchase_price": 2800, "current_price": 3000}
